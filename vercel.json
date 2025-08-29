@@ -1,0 +1,14 @@
+{
+	"framework": "sveltekit",
+	"functions": {
+		"src/routes/**/*.js": {
+			"runtime": "nodejs20.x"
+		},
+		"src/routes/**/*.ts": {
+			"runtime": "nodejs20.x"
+		}
+	},
+	"buildCommand": "npm run build",
+	"devCommand": "npm run dev",
+	"installCommand": "npm install"
+}
