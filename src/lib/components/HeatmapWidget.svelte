@@ -13,7 +13,7 @@
 	export let maxRetries = 3;
 
 	// Build configuration object
-	$: config: HeatmapConfig = {
+	$: config = {
 		apiBaseUrl,
 		assets,
 		refreshInterval,
@@ -21,7 +21,7 @@
 		showHeader,
 		showControls,
 		maxRetries
-	};
+	} satisfies HeatmapConfig;
 </script>
 
 <!-- 
